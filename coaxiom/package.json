@@ -8,10 +8,15 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "json2mq": "^0.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-google-recaptcha": "^2.1.0",
+    "react-pdf": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.3.1",
     "react-scripts": "4.0.1",
+    "react-swipeable-views": "^0.13.9",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

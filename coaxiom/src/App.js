@@ -1,12 +1,10 @@
 import React from 'react'
-import Landing from './pages/landing';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
+import ContentPage from './pages/ContentPage';
+
 
 function App() {
     return (
-        <Router>
-            <Route exact path="/" component={Landing} />
-        </Router>
+        <ContentPage/>
     )
 }
 
