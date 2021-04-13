@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import json2mq from 'json2mq';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -78,21 +78,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Contact() {
-    const [isValid, setIsValid] = useState(false);
-
     const isMobileSize = useMediaQuery(
         json2mq({
             maxWidth: 850
         })
     );
-
-    function submitForm(){
-        console.log("success");
-    }
-
-    function onChange(value) {
-        setIsValid(true);
-    }
     
     const classes = useStyles();
 
@@ -172,7 +162,6 @@ function Contact() {
                             variant="contained" 
                             color="primary" 
                             className={classes.button}
-                            onClick={() => submitForm()}
                         >
                             Send message
                         </Button>

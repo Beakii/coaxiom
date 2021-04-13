@@ -125,7 +125,6 @@ function TitleSquare() {
     const classes = useStyles();
     const theme = useTheme();
     const [activeStep, setActiveStep] = useState(0);
-    const maxSteps = services.length;
 
     const getRoute = (index) => {
       switch (index) {

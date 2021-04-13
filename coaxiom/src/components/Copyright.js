@@ -1,17 +1,8 @@
 import React from 'react'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import json2mq from 'json2mq';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 function Copyright() {
-
-    const isMobileSize = useMediaQuery(
-        json2mq({
-            maxWidth: 850
-        })
-    );
-
     return (
         <div style={{backgroundColor: 'black', color:'white', minWidth:"100%", textAlign: 'center' }}>
             <p>

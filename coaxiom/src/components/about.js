@@ -133,8 +133,8 @@ function About() {
     const classes = useStyles();
 
     return (
-        <Paper square square elevation={5} className={classes.root} id="top">
-                            <Typography className={classes.aboutUsText}>
+        <Paper square elevation={5} className={classes.root} id="top">
+                <Typography className={classes.aboutUsText}>
                     About Us
                 </Typography>
             <Paper 
@@ -143,7 +143,7 @@ function About() {
                 className={isMobileSize ? classes.theCompanyMobile : classes.theCompany} 
             >
                 <p>
-                    <span className={classes.inTextHeading}>Co-Axiom Associates</span> is a newly established consulting company founded by experienced financial services professionals. We specialise in the provision of professional and trustworthy services in the areas of Corporate Governance, Risk and Compliance, Project and Change Management, Internal Audit and Controls Assurance and Economic Sustainability. Co-Axiom’s ethos focuses on the human element and creates an environment that allows our team and clients to flourish and reach their full potential. 
+                    <span className={classes.inTextHeading}>Co-Axiom Associates</span> is a newly established consulting company founded by experienced financial services professionals. We specialise in the provision of professional and trustworthy services in the areas of Corporate Governance, Risk and Compliance, Project and Change Management, Staffing, Coaching, Training Solutions, Controls Assurance and Economic Sustainability. Co-Axiom’s ethos focuses on the human element and creates an environment that allows our team and clients to flourish and reach their full potential. 
                 </p>
                 <p>
                     <span className={classes.inTextHeading}>Co-Axiom</span> is defined as "A statement or proposition which is regarded as being established, accepted, or self-evidently true that is co-created with the client and us". 
@@ -163,9 +163,9 @@ function About() {
                     <span className={classes.inTextHeading}>H – Honesty</span> - We are honest, open, fair, ethical and genuine. People trust us, we lead with integrity.  
                 </p>
             </Paper>
-            <Paper square square elevation={0} className={isMobileSize ? classes.theTeamMobile : classes.theTeam}>
+            <Paper square elevation={0} className={isMobileSize ? classes.theTeamMobile : classes.theTeam}>
                 <Paper square elevation={0} className={isMobileSize ? classes.topInfo : classes.info}>
-                    <img className={classes.profilePictures} src={"john.jfif"}></img>
+                    <img className={classes.profilePictures} src={"john.jfif"} alt="john"></img>
                     <Typography className={classes.employeeName}>
                         John Stewart
                     </Typography>
@@ -185,7 +185,7 @@ function About() {
                     </p>
                 </Paper>
                 <Paper square elevation={0} className={isMobileSize ? classes.bottomInfo : classes.info}>
-                    <img className={classes.profilePictures} src={"avasha.jfif"}></img>
+                    <img className={classes.profilePictures} src={"avasha.jfif"} alt="avasha"></img>
                     <Typography className={classes.employeeName}>
                         Avasha Singh
                     </Typography>

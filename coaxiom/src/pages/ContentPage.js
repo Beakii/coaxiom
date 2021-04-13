@@ -10,6 +10,8 @@ import Resources from '../components/resources';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
 import Services from '../components/services';
+import PrivacyStatement from '../components/privacystatement';
+import Terms from '../components/terms';
 
 import json2mq from 'json2mq';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -56,7 +58,8 @@ function ContentPage() {
                         :
                         null
                     }
-                    
+                    <Route exact path="/Privacy" component={PrivacyStatement}/>
+                    <Route exact path="/Terms" component={Terms}/>
                 </Switch>
 
                 <Footer/>

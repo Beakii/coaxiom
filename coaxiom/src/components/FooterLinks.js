@@ -54,11 +54,11 @@ function FooterLinks() {
                     </ListSubheader>
                 }
             >
-                <ListItem button className={classes.listButton}>
-                    <HashLink to="/#home" className={classes.link}>
+                <HashLink to="/#home#top" className={classes.link}>
+                    <ListItem button className={classes.listButton}>
                         Home
-                    </HashLink>
-                </ListItem>
+                    </ListItem>
+                </HashLink>
 
                 
                 <HashLink to="/Services#top" className={classes.link}>
@@ -107,15 +107,15 @@ function FooterLinks() {
                     </ListSubheader>
                 }
             >
-                <HashLink className={classes.link}>
+                <HashLink to="/Terms#top" className={classes.link}>
                     <ListItem button className={classes.listButton}>
                         Terms & Conditions
                     </ListItem>
                 </HashLink>
 
-                <HashLink className={classes.link}>
+                <HashLink to="/Privacy#top" className={classes.link}>
                     <ListItem button className={classes.listButton}>
-                        Privacy Policy
+                        Privacy Statement
                     </ListItem>
                 </HashLink>
             </List>

@@ -1,7 +1,5 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import json2mq from 'json2mq';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { Typography } from '@material-ui/core';
 import EmailIcon from '@material-ui/icons/Email';
 import PersonIcon from '@material-ui/icons/Person';
@@ -40,16 +38,17 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1.5rem',
         fontFamily: "'Lato', sans-serif",
         fontWeight: '300'
+    },
+    email:{
+        '&:hover':{
+            color: 'rgb(82,119,179)'
+        },
+        color: 'black',
+        textDecoration: 'none'
     }
 }));
 
 function FooterList() {
-    const isMobileSize = useMediaQuery(
-        json2mq({
-            maxWidth: 850
-        })
-    );
-
     const classes = useStyles();
 
     return (
@@ -57,7 +56,7 @@ function FooterList() {
             <div className={classes.iconBox}>
                 <div className={classes.topRow}>
                     <EmailIcon className={classes.icon}/>
-                    <Typography className={classes.text}>info@co-axiom.com</Typography>
+                    <Typography className={classes.text}><a className={classes.email} href="mailto:info@co-axiom.com">info@co-axiom.com</a></Typography>
                 </div>
 
                 <br></br>
@@ -86,9 +85,6 @@ function FooterList() {
                 </div>
             </div>
         </div>
-
-
-
     )
 }
 

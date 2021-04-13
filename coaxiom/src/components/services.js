@@ -90,7 +90,7 @@ function Services() {
                         </p>
 
                         <Typography className={classes.subHeadings} id="SaCTS">
-                            Staffing and Coaching/Training Solutions
+                            Staffing, Coaching and Training Solutions
                         </Typography>
                         <p className={classes.text}>
                             <span className={classes.inTextHeading}>Staffing</span>
@@ -149,7 +149,7 @@ function Services() {
                     <Paper square elevation={0} className={!isMobileSize ? classes.gridPaperAlt : classes.gridPaperMobile}>
 
                         <Typography className={classes.subHeadings} id="GRaC">
-                            Governance Risk & Compliance
+                            Governance, Risk and Compliance
                         </Typography>
                         <p className={classes.text}>
                             <span className={classes.inTextHeading}>Governance</span>
